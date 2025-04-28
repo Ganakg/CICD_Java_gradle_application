@@ -4,8 +4,8 @@ pipeline{
         stage("build"){
             steps{
                 script{
-                    sh 'chmod +x gradbuild'
-                    sh './gradlew sonarqube'
+                    sh 'chmod +x gradlew'
+                    sh './gradlew build'
                 }
                         
             }
